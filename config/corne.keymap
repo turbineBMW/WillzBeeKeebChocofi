@@ -20,16 +20,19 @@
             flavor = "balanced";
             tapping-term-ms = <220>;
             bindings = <&mo>, <&kp>;
+
+            require-prior-idle-ms = <125>;
+            quick-tap-ms = <175>;
         };
 
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <150>;
+            tapping-term-ms = <180>;
             bindings = <&kp>, <&kp>;
 
-            require-prior-idle-ms = <60>;
+            require-prior-idle-ms = <125>;
             quick-tap-ms = <170>;
         };
 
@@ -37,10 +40,10 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <150>;
+            tapping-term-ms = <180>;
             bindings = <&kp>, <&kp>;
 
-            require-prior-idle-ms = <60>;
+            require-prior-idle-ms = <125>;
             quick-tap-ms = <170>;
         };
 
